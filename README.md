@@ -1,16 +1,18 @@
 ## install project
 
-change the databade connection in .env file
+add .env file and change the database connection to
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=drjob_app
-DB_USERNAME=username
-DB_PASSWORD=password
+DB_CONNECTION=mysql <br/>
+DB_HOST=127.0.0.1   <br/>
+DB_PORT=3306        <br/>
+DB_DATABASE=drjob_app <br/> 
+DB_USERNAME=username   <br/>
+DB_PASSWORD=password    <br/>
 
-run in terminal
+run in terminal  <br/>
 
-php artisan migrate
-php artisan db:seed
-composer install
+php artisan migrate  <br/>
+php artisan db:seed  <br/>
+composer install     <br/>
+npm install          <br/>
+npm run dev          <br/>

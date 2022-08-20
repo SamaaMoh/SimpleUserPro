@@ -20,7 +20,7 @@ class PostFactory extends Factory
             'content' => $this->faker->paragraph(),
             'status' => $this->faker->randomElement(['draft', 'publish','private']),
             'category_id' => PostCategory::all()->random()->id,
-            'user_id' => User::all()->random()->id,
+            'user_id' => User::inRandomOrder()->first(),
             'created_at' => now(),
             'updated_at' => now()
         ];

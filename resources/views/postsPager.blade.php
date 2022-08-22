@@ -14,7 +14,7 @@
                         <td>{{ $post->title }}</td>
                         <td>{{ $post->content }}</td>
                         <td>{{ $post->status }}</td>
-                        <td>{{ $post->id}}</td>
+                        <td>{{ $post->getPostCategory()}}</td>
                         <td>{{ $post->created_at }}</td>
 
                     </tr>

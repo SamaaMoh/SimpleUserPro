@@ -27,6 +27,7 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         $posts = Post::where("user_id", Auth::user()->id)->paginate(30);
+
         if($request->ajax()){
             return view('postsPager', ['posts' => $posts]);
         }
